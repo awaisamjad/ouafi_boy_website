@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>official site ZAHROUR</title>
+</head>
+<body>
+    <header>
+        <span>ZAHROUR</span>
+    </header>
+    
+    <main>
+        <h1>Z</h1>
+    </main>
+    <div class="menu">
+        <div id="videoparis">
+            <!-- <video id="video" src="parisblancetnoir.mp4" autoplay loop muted></video> -->
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <bottom>
+       <span>Histoire</span>  <span>Nouveautés</span>  <span>Cadeaux</span>  <span>Homme</span>  <span>Panier</span>
+    </bottom>
+
+    <div id="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Ajout de l'élément #menu -->
+    <div id="menu">
+        <a href="#">CONTACT</a>
+        <a href="#">LISTE D'ATTENTE</a>
+        <a href="#">SUIVRE MA COMMANDE</a>
+        <a href="#">VOTRE AVIS</a>
+        <a href="#">PANIER</a>
+    </div>
+
+    <section id="about-section"> </section>
+
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            var menuToggle = document.getElementById('menu-toggle');
+            
+            menu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+
+<div id="inscription-container">
+    <h2>ZAHROUR MEMBER</h2>
+    <form>
+        <label for="nom">NAME :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">EMail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Adhérer</button>
+    </form>
+</div>
+</body>
+</html>

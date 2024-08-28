@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+}
+
+#videoparis {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: arial, sample;
+    color: rgba(74, 72, 72, 0.176);
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #000000;
+    opacity: 0;
+    animation: fadeIn 5s forwards, zoomIn 5s forwards;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: #000000ce;
+    padding: 40px 0;
+    color: rgb(99, 99, 99);
+    text-align: center;
+    font-size: 36px;
+    font-family: phosphate;
+}
+
+bottom {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: #000000ce;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: optima, sans-serif;
+    word-spacing: 100px;
+    z-index: 1;
+    
+}
+
+
+#about-section {
+    background-image: url('Zck.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 400px;
+    text-align: center;
+   
+}
+
+
+#menu-toggle {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#menu-toggle div {
+    width: 25px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 7px 0;
+    transition: 0.4s;
+}
+
+#menu-toggle.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Ajout de styles pour le menu (à afficher/à cacher) */
+#menu {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    background-color: #00000043;
+    padding: 10px;
+    z-index: 1;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 0 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: block;
+}
+
+#menu.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes zoomIn {
+    0% {transform: scale(0.1);}
+    100% {transform: scale(55);}
+}
+
+
+#inscription-container {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    font-family: Arial, sans-serif;
+    color: rgba(158, 155, 155, 0.176);
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #ffffff;
+    opacity: 0;
+
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
